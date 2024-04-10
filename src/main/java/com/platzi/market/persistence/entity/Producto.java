@@ -25,13 +25,17 @@ public class Producto {
     @Column(name = "cantidad_stock")
     private Integer catidadStock;
 
-    private Boolean estado
+    private Boolean estado;
 
-    public Integert getIdProducto() {
+    @ManyToOne
+    @JoinColumn(name = "id_categoria", insertable = false, updatable = false)
+    private Categoria categoria;
+
+    public Integer getIdProducto() {
         return idProducto;
     }
 
-    public void setIdProducto(Integert idProducto) {
+    public void setIdProducto(Integer idProducto) {
         this.idProducto = idProducto;
     }
 
