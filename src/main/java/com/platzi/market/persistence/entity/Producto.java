@@ -25,7 +25,7 @@ public class Producto {
     @Column(name = "cantidad_stock")
     private Integer catidadStock;
 
-    private boolean estado
+    private Boolean estado
 
     public Integert getIdProducto() {
         return idProducto;
@@ -75,11 +75,11 @@ public class Producto {
         this.catidadStock = catidadStock;
     }
 
-    public boolean isEstado() {
+    public Boolean isEstado() {
         return estado;
     }
 
-    public void setEstado(boolean estado) {
+    public void setEstado(Boolean estado) {
         this.estado = estado;
     }
 }

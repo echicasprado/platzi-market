@@ -15,7 +15,7 @@ public class ComprasProducto {
 
     private Double total;
 
-    private boolean estado;
+    private Boolean estado;
 
     public ComprasProductoPK getId() {
         return id;
@@ -41,11 +41,11 @@ public class ComprasProducto {
         this.total = total;
     }
 
-    public boolean isEstado() {
+    public Boolean isEstado() {
         return estado;
     }
 
-    public void setEstado(boolean estado) {
+    public void setEstado(Boolean estado) {
         this.estado = estado;
     }
 }
